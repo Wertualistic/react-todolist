@@ -1,0 +1,95 @@
+.text-success {
+  color: green;
+  font-size: 30px;
+  text-decoration: line-through;
+}
+
+.btn3 {
+  color: #000;
+  font-size: 30px;
+}
+
+.todolist {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 185, 165, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31%;
+}
+
+form button{
+    position: relative;
+    left: -30px;
+}
+
+.form-control {
+  width: 100% !important;
+}
+
+ol {
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 510px;
+  height: 350px;
+}
+
+ol::-webkit-scrollbar {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: left;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 1100px) {
+  form {
+    width: 41%;
+  }
+}
+
+@media (max-width: 767px) {
+  form {
+    width: 51%;
+  }
+  .li {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: space-between !important;
+  }
+  li {
+    font-size: 20px !important;
+    width: 20% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .li {
+    width: 30% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 100px;
+  }
+}
